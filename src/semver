@@ -431,7 +431,7 @@ function command_validate {
 }
 
 case $# in
-  0) echo "Unknown command: $*"; usage_help;;
+  0) echo "$USAGE"; exit 0;;
 esac
 
 case $1 in
